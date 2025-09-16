@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservations - Heat Haus</title>
+  <link rel="stylesheet" href="reservation.css" />
+  <link rel="shortcut icon" href="./Media/favicom.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="index.html"><img id="logo" src="./Media/Logo (2).png" alt="Heat Haus Logo"></a>
+
+    <!-- hidden checkbox -->
+    <input type="checkbox" id="check">
+
+    <!-- nav links -->
+    <ul>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="reservation.html">RESERVATIONS</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="job.html">JOBS</a></li>
+    </ul>
+
+    <!-- hamburger toggle -->
+    <label for="check" class="icons">
+      <i class="fas fa-bars" id="menu-icon"></i>
+      <i class="fas fa-times" id="cancel-icon"></i>
+    </label>
+  </nav>
+
+  <!-- Reservation Section -->
+  <section class="reservation">
+    <h1>🛎️ Reserve Your Seats at Heat Haus</h1>
+    <p class="intro-text">
+      Make your dining experience unforgettable. Choose your meal, select your guests, 
+      and let us reserve your perfect table. Bold flavors, cozy vibes, and unforgettable memories await!
+    </p>
+
+    <div class="reservation-wrapper">
+      <div class="reservation-img">
+        <img src="./Media/reserve.png" alt="Reserve" />
+      </div>
+
+      <div class="reservation-form">
+        <h2>Book Your Table</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="number" placeholder="Phone Number" required />
+
+          <select id="guest" required>
+            <option disabled selected>Number of Guests</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6 Guests</option>
+            <option>7 Guests</option>
+            <option>8 Guests</option>
+            <option>9 Guests</option>
+            <option>10 Guests</option>
+          </select>
+
+          <input type="date" id="date" name="date" required />
+
+          <label for="meal">Choose a Meal:</label>
+          <select id="meal" name="meal" required>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="beverages">Beverages</option>
+          </select>
+
+          <textarea placeholder="Special Requests"></textarea>
+          <button type="submit">Reserve Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Cereena</p>
+    <p>&copy; 2025 CHIC AURA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
