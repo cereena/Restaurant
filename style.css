@@ -440,6 +440,9 @@ footer {
         /* Allow height to adjust */
     }
 
+    .intro {
+        padding-top: 12%;
+    }
     .introdes h1 {
         font-size: 2.5rem;
         /* Smaller heading for mobile */
